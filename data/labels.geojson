@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "point_1", "name": "Мелітополь" }, "geometry": { "type": "Point", "coordinates": [ 35.364395025272174, 46.847349154927308 ] } },
+{ "type": "Feature", "properties": { "id": "point_2", "name": "Токмак" }, "geometry": { "type": "Point", "coordinates": [ 35.706413510099758, 47.254678148490157 ] } },
+{ "type": "Feature", "properties": { "id": "point_3", "name": "Очеретувате" }, "geometry": { "type": "Point", "coordinates": [ 35.946371835314849, 47.337013580182528 ] } },
+{ "type": "Feature", "properties": { "id": "point_4", "name": "Роботине" }, "geometry": { "type": "Point", "coordinates": [ 35.836434736381172, 47.445598800267504 ] } },
+{ "type": "Feature", "properties": { "id": "point_5", "name": "Новопрокопівка" }, "geometry": { "type": "Point", "coordinates": [ 35.834904349057297, 47.409097768819088 ] } },
+{ "type": "Feature", "properties": { "id": "point_6", "name": "Перша лінія" }, "geometry": { "type": "Point", "coordinates": [ 35.776435864955914, 47.457515141663357 ] } },
+{ "type": "Feature", "properties": { "id": "point_7", "name": "Друга лінія" }, "geometry": { "type": "Point", "coordinates": [ 35.820322675036458, 47.39055359372346 ] } },
+{ "type": "Feature", "properties": { "id": "point_8", "name": "Третя лінія" }, "geometry": { "type": "Point", "coordinates": [ 35.812916163455291, 47.306588077022525 ] } },
+{ "type": "Feature", "properties": { "id": "point_9", "name": "Проміжна лінія" }, "geometry": { "type": "Point", "coordinates": [ 35.92214934102185, 47.383424494456072 ] } },
+{ "type": "Feature", "properties": { "id": "point_9", "name": "Капонір" }, "geometry": { "type": "Point", "coordinates": [ 35.826778738019641, 47.430249877558452 ] } },
+{ "type": "Feature", "properties": { "id": "point_10", "name": "Протитанковий рів" }, "geometry": { "type": "Point", "coordinates": [ 35.760039136128121, 47.315200242392407 ] } },
+{ "type": "Feature", "properties": { "id": "point_11", "name": "\"зуби дракона\"" }, "geometry": { "type": "Point", "coordinates": [ 35.776016279350742, 47.31325193600675 ] } },
+{ "type": "Feature", "properties": { "id": "point_12", "name": "Укріплення" }, "geometry": { "type": "Point", "coordinates": [ 35.791310280003472, 47.306533999296732 ] } },
+{ "type": "Feature", "properties": { "id": "point_10", "name": "Протитанковий рів" }, "geometry": { "type": "Point", "coordinates": [ 35.735948144757522, 47.379630107260923 ] } },
+{ "type": "Feature", "properties": { "id": "point_11", "name": "\"зуби дракона\"" }, "geometry": { "type": "Point", "coordinates": [ 35.710634304275416, 47.376521907118793 ] } },
+{ "type": "Feature", "properties": { "id": "point_12", "name": "Укріплення" }, "geometry": { "type": "Point", "coordinates": [ 35.80709543988641, 47.387671887549402 ] } },
+{ "type": "Feature", "properties": { "id": "point_13", "name": "Укріплення" }, "geometry": { "type": "Point", "coordinates": [ 35.940104762246285, 47.346843488273898 ] } },
+{ "type": "Feature", "properties": { "id": "point_14", "name": "\"зуби дракона\"" }, "geometry": { "type": "Point", "coordinates": [ 35.956784595398979, 47.352272104326659 ] } },
+{ "type": "Feature", "properties": { "id": "point_15", "name": "Протитанковий рів" }, "geometry": { "type": "Point", "coordinates": [ 35.9780894406599, 47.35684586251709 ] } },
+{ "type": "Feature", "properties": { "id": "point_16", "name": "Укріплення" }, "geometry": { "type": "Point", "coordinates": [ 35.675065835640318, 47.275722522758947 ] } },
+{ "type": "Feature", "properties": { "id": "point_17", "name": "\"зуби дракона\"" }, "geometry": { "type": "Point", "coordinates": [ 35.70552981889297, 47.285160701947497 ] } },
+{ "type": "Feature", "properties": { "id": "point_18", "name": "Протитанковий рів" }, "geometry": { "type": "Point", "coordinates": [ 35.731691945491747, 47.291666852842972 ] } },
+{ "type": "Feature", "properties": { "id": "point_19", "name": "\"зуби дракона\"" }, "geometry": { "type": "Point", "coordinates": [ 35.795138400020974, 47.394505669819928 ] } },
+{ "type": "Feature", "properties": { "id": "point_20", "name": "Грунтовка" }, "geometry": { "type": "Point", "coordinates": [ 35.790271758537919, 47.394239891927256 ] } },
+{ "type": "Feature", "properties": { "id": "point_21", "name": "Сховки для техніки" }, "geometry": { "type": "Point", "coordinates": [ 35.813137954914083, 47.404759298651534 ] } }
+]
+}

@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="fb:app_id" content="329250623807149" />
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="На шляху до моря"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/texty/rus_tranches_2_web/main/pic/socio-cover.png"
+    />
+    <meta
+      property="og:description"
+      content="Кілометри окопів, безкраї мінні поля, сотні бліндажів, підземні тунелі й цілі “земляні фортеці”. Які оборонні споруди доводиться “прогризати” ЗСУ на півдні України"
+    />
+    <meta
+      property="og:url"
+      content="https://texty.org.ua/d/2023/rus_tranches_2/"
+    />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua" />
+    <meta property="twitter:account_id" content="49572937" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://texty.org.ua/d/2023/rus_tranches_2/"
+    />
+    <meta
+      name="twitter:title"
+      content="На шляху до моря"
+    />
+    <meta
+      name="twitter:description"Кілометри окопів, безкраї мінні поля, сотні бліндажів, підземні тунелі й цілі “земляні фортеці”. Які оборонні споруди доводиться “прогризати” ЗСУ на півдні України"
+    />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+
+    <!-- Other Meta Tags -->
+    <meta
+      name="title"
+      content="На шляху до моряк"
+    />
+    <meta
+      name="description"
+      content="Кілометри окопів, безкраї мінні поля, сотні бліндажів, підземні тунелі й цілі “земляні фортеці”. Які оборонні споруди доводиться “прогризати” ЗСУ на півдні України"
+    />
+
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <script
+      src="https://kit.fontawesome.com/043a4ca43b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+
+    <title>
+      На шляху до моря
+    </title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXHPRQFFLB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EXHPRQFFLB');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '528421947990222');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=528421947990222&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <div style="height: 100vh; margin-bottom: 5%">
+      <img id="cover" src="pic/cover.jpg" />
+      <div id="menu-wrapper">
+        <a href="https://texty.org.ua/"
+          ><img src="pic/white_logo.svg" id="main-logo"
+        /></a>
+        <nav class="rubrics-container">
+          <div class="rubric r1">
+            <a href="https://texty.org.ua/tag/khid-vijny/"
+              ><span><b></b>ХІД ВІЙНИ</span></a
+            >
+          </div>
+          <div class="rubric r2">
+            <a href="https://texty.org.ua/tag/dezinformatsija/"
+              ><span>#Інфовійна</span></a
+            >
+          </div>
+          <div class="rubric r3">
+            <a href="https://texty.org.ua/articles/"><span>Статті</span></a>
+          </div>
+          <div class="rubric r4">
+            <a href="https://texty.org.ua/fragments/"><span>Фрагменти</span></a>
+          </div>
+          <div class="rubric r4">
+            <a href="https://texty.org.ua/selected/"
+              ><span>ВИБІР РЕДАКЦІЇ</span></a
+            >
+          </div>
+        </nav>
+      </div>
+      <div class="header-wrapper">
+        <div id="socio-icons">
+          <!--fb-->
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2023/rus_tranches_2_web/"
+            target="_blank"
+            class="share-btn"
+          >
+            <div class="icon-wrapper">
+              <img id="fb" src="pic/facebook.png" />
+            </div>
+          </a>
+          <!--tw -->
+          <a
+            href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2023/rus_tranches_2_web/"
+            target="_blank"
+            class="share-btn"
+          >
+            <div class="icon-wrapper">
+              <img id="tw" src="pic/twitter.png" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="title-wrapper">
+        <h1>НА ШЛЯХУ ДО МОРЯ</h1>
+        <h2>Кілометри окопів, безкраї мінні поля, сотні бліндажів, підземні тунелі й цілі “земляні фортеці”. Які оборонні споруди доводиться “прогризати” ЗСУ на півдні України
+</h2>
+      </div>
+    </div>
+    <div id="autors">
+      Автор:
+      <a
+        href="https://texty.org.ua/author/denys-hubashov/"
+        target="_blank"
+        class="red-d"
+        >Денис Губашов</a
+      ></div>
+      <div class='blackP'>
+        <p id="leadone">
+          ТЕКСТи реконструювати російську оборону лінію на півдні. Ми дослідили на супутникових знімках  за червень-вересень 2023 
+          року оборонні споруди окупантів ще не взятого міста Токмак і сіл Роботине й Вербове, які наші війська нещодавно звільнили.</p>
+        <p>
+       Після звільнення Роботиного розпочалася велика битва за Токмак, яка теоретично може стати фінальним актом активної воєнної кампанії 2023 року. </p>
+        <p>
+        Токмак — ключ до Мелітополя, і битва за це чимале місто може тривати кілька місяців з перемінним успіхом, але стане ключовою для “розрубування” сухопутного коридору з окупованого Криму до окупованих східних областей.
+        </p>
+        <p>
+        Оборона росіян, яку вони побудували за останні півтора року, — це сотні кілометрів безперервних траншей, бліндажів, ДОТів, ДЗОТів, окремих опорних пунктів — за розміром як середньовічний форт, який може кілька діб оборонятись автономно, а також налагоджена логістика, система малих складів боєкомплекту, тилові бази радіорозвідки, загонів БПЛА, артилеристів.
+        </p>
+      </div>
+      <div class="adaptive-image"></div>
+      <div class='blackP'>
+      <p>Окупанти зараз стягнули під Токмак усі можливі резерви: “елітні частини” ВДВ, мобілізованих, загони шторм-Z — тобто все, що могли. Орієнтовно на цьому напрямку російська армія може мати понад 100 тис. особового складу. Водночас загальна кількість окупаційного контингенту — тих, хто перебуває на лінії бойового зіткнення та у ближньому тилу, — понад 400 тис. осіб.
+      </p>
+      <p>Ми намагалися хоча б частково показати, як побудовано російські укріплення на півдні. Оборонні лінії потужні, тому, схоже, їх штурм може затягнутися на місяці.</p>
+      <p>Червона зона на карті - окуповані території </p>
+      </div>
+      <section style="margin-top: 10vh">
+        <div id="mapBlocks">
+          <div id="map"></div>
+        </div>
+        <div id="textBlocks"><div class="step" datazoom="9.0" zoom_mobile="6.0" coords_mobile="47.04817047039728, 35.52859988947387" datacoords ="47.1, 35.5" datapoly="nan" datapoints="point_1, point_2" datalines="nan" datalabels="point_1, point_2"><h5>1</h5><p>Стратегічна ціль ЗСУ — вийти до узбережжя Азовського моря. Це дасть змогу розірвати комунікації та ланцюжки постачання між окупованим сходом України та окупованим Кримом.  Звільнення Мелітополя — крок до цієї мети.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="nan" datapoints="nan" datalines="line_6, line_8, line_5, line_7" datalabels="point_6,point_7,point_8"><h5>2</h5><p>Україна активно наступає на Токмацькому напрямку. Лінія фронту вже посунулася на південь — до другої лінії російської оборони. Російські укріплення на цьому напрямку складаються з трьох основних ліній оборони.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="nan" datapoints="nan" datalines="line_5" datalabels="point_6"><h5>3</h5><p>Перша  лінія — так звані ВОПи та РОПи, які утримують взводи або роти. Їх так і розшифровують: "взводний / ротний опорний пункт". Це відносно автономні укріплення, що складаються з окопів і бліндажів. Весь можливий простір між цими укріпленнями й до другої лінії оборони — мінні поля. Тільки окремі дороги зʼєднують опорні пункти з другою лінією оборони, з якої відбувається постачання.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="poly_12" datapoints="nan" datalines="nan" datalabels="nan"><h5>4</h5><p>Перед першою лінією та між її укріпленнями, найімовірніше, й розташовано найбільші від часу Першої світової війни мінні поля у Європі.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="poly_13" datapoints="nan" datalines="nan" datalabels="nan"><h5>5</h5><p>Сили оборони України змогли подолати ці мінні поля та укріплення, якими їх оточено, а також частково здолали другу лінію оборони: протитанковий рів і протитанкові піраміди — на цьому зійшлися більшість OSINT-дослідників, які вивчають бойові дії на півдні.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="nan" datapoints="nan" datalines="line_6" datalabels="point_7"><h5>6</h5><p>Друга лінія — основна. В основі лінії — окоп, завдовжки десятки кілометрів. На ньому, як на намисті, нанизано різні укріплення: складні інженерні укріплення й конструкції, бетонні бункери, згадані раніше ВОПи й РОПи, також трапляються великі укріплення батальйонного рівня із залогою 500-600 людей. Такі укріплення вже мають власні штаби та склади, які переважно розташовано в найближчих населених пунктах.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="nan" datapoints="nan" datalines="line_8" datalabels="point_8"><h5>7</h5><p>Третя лінія — це забезпечення. Вона також має укріплення, і саме на ній розташовані найбільші склади (серед тих, що перебувають близько до лінії бойового зіткнення). До того ж на ній містяться підрозділи підтримки: великі ремонтні майстерні, підрозділи розвідки, РЕБ, РЕР, штаби артилерійських підрозділів. </p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.45833549489009, 35.84816029086062" datacoords ="47.38449547501486, 35.57714295191823" datapoly="nan" datapoints="nan" datalines="tokmak,ocheret" datalabels="point_3,point_2"><h5>8</h5><p>Також вона містить укріплення навколо великих населених пунктів: Токмака й Очеретуватого.</p></div><div class="step" datazoom="12.0" zoom_mobile="12.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="nan" datapoints="point_3, point_6, point_5" datalines="nan" datalabels="point_4, point_5"><h5>9</h5><p>Розглянемо укріплення першої лінії оборони. Цей опорний пункт розташовано між звільненим Роботиним (його звільнили на початку вересня 2023 року) й Новопрокопівкою. Можливо, саме тут ЗСУ зараз здійснюють штурм.</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="nan" datapoints="nan" datalines="field_1_line" datalabels="nan"><h5>10</h5><p>На зображенні — опорний пункт першої лінії. Тобто його будували перед самими нашими позиціями. Якщо оцінювати за розмірами, то припускаємо, що він розрахований на залогу — до 200 осіб, тобто на роту. Має розгалуджену систему траншей і бліндажів, а також секрети. Найімовірніше, оточений мінними полями. Знімок зроблено в червні 2023 року — відтоді укріплення могли тільки збільшити. Найімовірніше, станом на вересень 2023-го конкретно це укріплення захопили ЗСУ, принаймні про це свідчасть дані сайту DeepState, який ретельно відстежує зміни на лінії фронту. <br> На зображенні нижче — книжковий приклад опорного пункту, розрахованого на стрілкове відділення, — такі опорні пункти обʼєднують у взводний, а взводні опорні пункти — у ротний.</p><p class="img-header">Окоп із винесеними наперед комірками<p><div><img src='pic/01.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="roof_1" datapoints="nan" datalines="nan" datalabels="nan"><h5>11</h5><p>Як бачимо, частина траншей (окопів) має перекриття. Із західної сторони, найімовірніше, перекрито близько 200 м траншеї. Припускаємо, що це відповідь на використання дронів зі скидами.</p><p class="img-header">Перекриття окопів<p><div><img src='pic/02.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="1" datapoints="nan" datalines="nan" datalabels="point_9"><h5>12</h5><p>У цьому укріпленні також є капонір, який можна використовувати, щоб ховати техніку, боєкомплект чи паливо. </p><p class="img-header">Капонір для захисту техніки<p><div><img src='pic/03.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="12.0" zoom_mobile="12.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="nan" datapoints="point_5, point_6" datalines="line_4" datalabels="point_4, point_5"><h5>13</h5><p>До цього укріплення веде основна дорога Роботине — Новопрокопівка</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="nan" datapoints="nan" datalines="line_3" datalabels="nan"><h5>14</h5><p>та польові дороги і в середині укріплення, і до інших вузлів оборони.</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="poly_2" datapoints="nan" datalines="nan" datalabels="nan"><h5>15</h5><p>Найімовірніше, поля навколо цього укріплення заміновано, на них майже відсутні сліди від військової техніки.</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="nan" datapoints="point_4" datalines="nan" datalabels="nan"><h5>16</h5><p>У цьому укріпленні є й "виносні" спостереджні пункти. Стрілецькі або кулементі позиції перебувають дещо віддалік від основного окопу — на відстані близько 70-90 м.</p><p class="img-header">Виносні стрілкові комірки<p><div><img src='pic/04.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.43146911869496, 35.82821113369371" datacoords ="47.431208275188254, 35.82170982667259" datapoly="poly_14" datapoints="nan" datalines="nan" datalabels="nan"><h5>17</h5><p>Перед укріпленням рослинність викошено — відповідно до підручників з військової інженерної справти.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.46484369736561, 35.85007055150422" datacoords ="47.34466637153727, 35.745808825589535" datapoly="nan" datapoints="nan" datalines="line_5" datalabels="nan"><h5>18</h5><p>Таких укріплень по всій лінії фронту дуже багато. Ми дослідили тільки невелинку ділянку на Токмакському напрямку, на якій зараз триває український наступ.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.46484369736561, 35.85007055150422" datacoords ="47.34466637153727, 35.745808825589535" datapoly="nan" datapoints="nan" datalines="line_6,line_8" datalabels="point_7,point_8"><h5>19</h5><p>Друга і третя лінії оборони містять ще складніші інженерні споруди.</p></div><div class="step" datazoom="10.0" zoom_mobile="8.0" coords_mobile="47.46484369736561, 35.85007055150422" datacoords ="47.34466637153727, 35.745808825589535" datapoly="nan" datapoints="nan" datalines="line_7" datalabels="nan"><h5>20</h5><p>На цій ділянці є також особливість: між другою і третьою лініями оборони наявна ще одна — проміжна — система укріплень.</p></div><div class="step" datazoom="12.0" zoom_mobile="8.0" coords_mobile="47.46484369736561, 35.85007055150422" datacoords ="47.34466637153727, 35.745808825589535" datapoly="nan" datapoints="nan" datalines="line_12,line_13,line_14, line_17, line_6, line_8" datalabels="point_10,point_11,point_12"><h5>21</h5><p>Кожна лінія складається мінімум із протитанкового рову, пірамідок суровікіна (зубів дракона) й безпосередніх військових укріплень.</p><div class="video-container"><video class='video' src="./pic/mov_1.mp4" autoplay loop muted>>
+                <source src="./pic/mov_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div></div><div class="step" datazoom="12.0" zoom_mobile="10.0" coords_mobile="47.33672460095855, 35.94652934209603" datacoords ="47.33366453129557,35.95951028248828" datapoly="nan" datapoints="point_7" datalines="line_10, line_11,line_9" datalabels="point_3,point_13,point_14,point_15"><h5>22</h5><p>Село Очеретувате має окремі лінії оборони, які складаються із протитанкового рову, протитанкових пірамідок і кількох опорних пунктів, розвернених фронтом на північ.</p></div><div class="step" datazoom="16.0" zoom_mobile="16.0" coords_mobile="47.34868443735297, 35.94020221971701" datacoords ="47.34866523493545, 35.93602913878436" datapoly="nan" datapoints="nan" datalines="line_9" datalabels="nan"><h5>23</h5><p>Окремий опорний пункт має вигляд літери "Т" із підпорками — це дає змогу під обстрілами відходити в тил, доставляти боєкомплект та зброю й евакуювати поранених.</p><p class="img-header">Т-подібний опорний пункт<p><div><img src='pic/05.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="12.0" zoom_mobile="10.0" coords_mobile="47.25284392037722, 35.71383405598826" datacoords ="47.2472281279496, 35.669973971999184" datapoly="nan" datapoints="point_1" datalines="line_13, line_16, line_15" datalabels="point_2,point_16,point_17,point_18"><h5>24</h5><p>Навколо Токмака теж окремі укріплення: протитанковий рів, пірамідки дракона, окопи й траншеї.</p></div><div class="step" datazoom="14.0" zoom_mobile="12.0" coords_mobile="47.41168479939094, 35.441714169049135" datacoords ="47.40951443190704, 35.52051367056194" datapoly="nan" datapoints="nan" datalines="line_6" datalabels="nan"><h5>25</h5><p>До другої лінії оборони також належать і окремі інженерні споруди. На захід у сторону Василівки, наприклад, помітно не цілісні окопи, а окремі опорні пункти. Розмір такого пункту може сягати до 500 м фронту, а глибина — до 200 м.</p></div><div class="step" datazoom="14.0" zoom_mobile="10.0" coords_mobile="47.429480400994606, 35.38452043758463" datacoords ="47.405083211315684, 35.401602021635455" datapoly="nan" datapoints="nan" datalines="line_6" datalabels="nan"><h5>26</h5><p>Такі опорні пункти є й ближче до Василівки, насамперед уздовж дороги Василівка — Токмак, одного з основних шляхів постачання російської армії на лінії бойового зіткнення.</p></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.393953193301826, 35.7902897339234" datapoly="nan" datapoints="nan" datalines="line_14" datalabels="nan"><h5>28</h5><p>На північ від Солодкої Балки дорогу на Токмак прикриває російський опорний пункт батальйонного рівня. Розмір цієї "фортеці" має по фронту понад 6 км. А також протитанковий рів, який прорізає дорога з Токмака на Роботине. </p></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.393953193301826, 35.7902897339234" datapoly="nan" datapoints="nan" datalines="line_17,line_18" datalabels="point_19,point_20"><h5>29</h5><p>Після нього йдуть протитанкові бетонні пірамідки, а вздовж рову та лінії пірамідок можна побачити сліди від автомобілів, які патрулюють цілісність цих ліній.</p></div><div class="step" datazoom="14.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.3904759548756, 35.78955279312012" datapoly="nan" datapoints="nan" datalines="line_6" datalabels="nan"><h5>30</h5><p>Далі йдуть безпосередньо самі укріплення. Вони доволі складні й містять різні інженерні споруди. </p><p class="img-header">Примкнуті стрілкові комірки<p><div><img src='pic/7.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.39078373489468, 35.79829912236613" datapoly="poly_3" datapoints="nan" datalines="nan" datalabels="nan"><h5>31</h5><p>Частину окопів перетворено на підземні тунелі, що дає змогу заховатися під час артилерійського обстрілу або від атаки дронами, які несуть гранати чи інші боєприпаси для скидання. Деякі укріплення можуть бути бетонними — доти.</p></div><div class="step" datazoom="14.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.39086782931767, 35.779832467650664" datapoly="nan" datapoints="point_8" datalines="line_6" datalabels="nan"><h5>32</h5><p>Самі укріплення дуже розгалужені й мають захищені лінії підходів із тилу. Такі траншеї, розміщені поперек фронту, дають можливість умовно безпечно досталяти боєкомплект, евакуювати поранених тощо.</p><p class="img-header">Траншея пристосована для внутрішньої оборони<p><div><img src='pic/6.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.39167658557841, 35.79214059261702" datapoly="poly_4" datapoints="nan" datalines="nan" datalabels="nan"><h5>33</h5><p>Відразу за укріпленнями розташовано "плац", або площу, яку використовують для господарськийх потреб і розвантаження автомобілів із припасами. Біля самих укріплень не видно жодних споруд над землею — все сховано.</p></div><div class="step" datazoom="15.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords =" 47.3904018593351, 35.79116282069404" datapoly="nan" datapoints="nan" datalines="line_19" datalabels="nan"><h5>34</h5><p>Також до різних частин укріплень ведуть грунтові дороги — свідчення активності на цьому опорному пункті. </p></div><div class="step" datazoom="15.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords =" 47.3904018593351, 35.79116282069404" datapoly="nan" datapoints="point_10" datalines="nan" datalabels="nan"><h5>35</h5><p>Сама лінія укріплень розрахована на довгий захист — її зведено капітально. Вона має численні стрілецькі позиції, зокрема й кулеметні.</p></div><div class="step" datazoom="15.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.392123165319674, 35.77909196459339" datapoly="poly_9" datapoints="nan" datalines="line_6" datalabels="nan"><h5>36</h5><p>З лівого флангу цю позицію прикриває посадка. Сама траншея перебуває під прикриттям дерев, а ось стрілецькі позиції трохи винесено наперед.</p></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.393953193301826, 35.7902897339234" datapoly="nan" datapoints="point_14" datalines="nan" datalabels="nan"><h5>37</h5><p>Також вона має дві виносні позиції — можливо, обманки.</p></div><div class="step" datazoom="15.0" zoom_mobile="14.0" coords_mobile="47.39273085555095, 35.79388414908067" datacoords ="47.391591638233024, 35.784122152386146" datapoly="poly_10" datapoints="nan" datalines="nan" datalabels="nan"><h5>38</h5><p>У цьому опорному пункті облаштовано численні позиції: капоніри, для захисту техніки. Імовірно, він належить механізованій бригаді. У таких капонірах можуть ховати танки, бронетранспортери й вантажівки.</p><p class="img-header">Так виглядає типовий капонір для танку<p><div><img src='pic/image_1.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="nan" datapoints="nan" datalines="line_20" datalabels="nan"><h5>39</h5><p>На окрему увагу заслуговують укріплення на північ від Ільченкового. Це передовий пункт тієї лінії оборони, яку ми щойно детально розглянули.  Його мета — прикрити дорогу й затримати ЗСУ під час наступу, виграти час. Його збудовано відповідно до радянських підручників з інженерної справи.</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="poly_5" datapoints="nan" datalines="nan" datalabels="nan"><h5>40</h5><p>Згідно з такими підручниками, траву перед позиціями має бути скошено. </p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="poly_6" datapoints="nan" datalines="nan" datalabels="nan"><h5>41</h5><p>Тут центральну траншею, що дає змогу швидко дістатися з одного краю позицій до іншого, зроблено як тунель на відрізку, завдовжки 80 м.</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="nan" datapoints="point_11" datalines="nan" datalabels="nan"><h5>42</h5><p>Це кріплення має і відкриті стрілецькі позиції, й закриті. Деякі із них можуть бути кулеметними, деякі — спостережними.</p><p class="img-header">Стрілкова комірка із критою бійницею<p><div><img src='pic/8.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="poly_7" datapoints="nan" datalines="nan" datalabels="nan"><h5>43</h5><p>А також тут облаштовано кілька капонірів для техніки.</p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="nan" datapoints="nan" datalines="line_21" datalabels="nan"><h5>44</h5><p>Дороги до укріплення розʼїжджено. Заїзд у самі укріплення розташовано через посадку — в тилу. </p></div><div class="step" datazoom="16.0" zoom_mobile="15.0" coords_mobile="47.40398593008689, 35.804480593838235" datacoords ="47.40389161203311, 35.80218657175638" datapoly="nan" datapoints="point_12" datalines="nan" datalabels="nan"><h5>45</h5><p>Тут росіяни в посадці ховають кілька військових вантажівок.</p></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.406447341566064, 35.8132615122953" datacoords ="47.40632126783163, 35.8082772717479" datapoly="poly_8" datapoints="nan" datalines="nan" datalabels="nan"><h5>46</h5><p>Трохи північніше від цих укріплень у невеликому гаю росіяни часто ховають свою техніку.</p></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.406447341566064, 35.8132615122953" datacoords ="47.40632126783163, 35.8082772717479" datapoly="nan" datapoints="nan" datalines="line_22" datalabels="point_21"><h5>47</h5><p>Про це свічать грунтові дороги довкола посадки.</p></div><div class="step" datazoom="15.0" zoom_mobile="13.0" coords_mobile="47.406447341566064, 35.8132615122953" datacoords ="47.405925326621855, 35.80368913025103" datapoly="nan" datapoints="point_13" datalines="nan" datalabels="nan"><h5>48</h5><p>Навколо посадки — вирви від снарядів.</p></div><div class="step" datazoom="16.0" zoom_mobile="14.0" coords_mobile="47.404826342195236, 35.82675426816934" datacoords ="47.40477994022072, 35.823646391926246" datapoly="nan" datapoints="point_14" datalines="nan" datalabels="nan"><h5>49</h5><p>У сусідній посадці, найімовірніше, також ховають техніку, і по вирвах від снярядів помітно, що українські артилеристи про це знають. Нагадаємо, що цей знімок високої якості зроблено в червні-липні 2023 року. </p></div><div class="step" datazoom="14.0" zoom_mobile="12.0" coords_mobile="47.442750227469446, 35.9583280375617" datacoords ="47.43243025050333, 35.914088209562806" datapoly="nan" datapoints="point_16" datalines="line_6,line_14,line_17" datalabels="nan"><h5>50</h5><p>Українські воїни зараз штурмують російські позиції під Вербовим.</p></div><div class="step" datazoom="14.0" zoom_mobile="12.0" coords_mobile="47.4520080730683, 35.9071452380887" datacoords ="47.44717566817957, 35.8704862198058" datapoly="nan" datapoints="point_17" datalines="line_5" datalabels="nan"><h5>51</h5><p>Уже було захоплено позиції на північний захід від міста.</p></div><div class="step" datazoom="14.0" zoom_mobile="12.0" coords_mobile="47.43326510878427, 35.939341053457156" datacoords ="47.436116016653784, 35.92890064991832" datapoly="nan" datapoints="nan" datalines="line_6" datalabels="nan"><h5>52</h5><p>Командувач оперативно-стратегічного угруповання військ "Таврія" Олександр Тарнавський повідомив, що Збройні сили України здійснили прорив під Вербовим. Можна припустити, що основні бої тут точаться вже на російській лінії оборони.</p><p class="img-header">Російські позиції до та підчас контрнаступу<p><div><img src='pic/compare.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="nan" zoom_mobile="16.0" coords_mobile="47.43659394611501, 35.93628803955494" datacoords ="nan" datapoly="nan" datapoints="nan" datalines="nan" datalabels="nan"><h5>53</h5><p>Ми досліджували російські позиції на супутникових знімках високої якості за червень-серпень 2023 року. Проте на знімках за вересень (але трохи нижчої роздільної здатності) помітно, що ці позиції перестали існувати фізично — їх знищено вогнем артилерії та систем залпового вогню.</p><p class="img-header">Російські позиції до та підчас контрнаступу<p><div><img src='pic/compare2.png' loading="lazy" style="display: block; margin: auto;  max-height: 50vh;"></div></div><div class="step" datazoom="nan" zoom_mobile="nan" coords_mobile="nan" datacoords ="nan" datapoly="nan" datapoints="nan" datalines="nan" datalabels="nan"><h5>54</h5><p>Ви маєте змогу самостійно дослідити російські позиції, карту можна рухати та змінювати машстаб.</p></div></div>
+
+        <div id="scroll-final"></div>
+      </section>
+      <div>
+        <div id="final-block" style="margin-top: 10%">
+          <p class="simple-text">
+            Від супутникової розвідки сховатися майже неможливо — маючи абсолютно невибагливий компʼютер та доступ до інтернету ви самостійно можете отримати безкоштовні 
+            супутникові знімки та знайти де ховається ворог. 
+          </p>
+          <p class="simple-text">
+            Український контрнаступ одна із складніших та кровопролитніших військових операцій у східній Европі з часів Другої світової війни. 
+            Підтримуйте сили оборони, та допомагайте на фронті зараз складно.
+          </p>
+        </div>
+      </div>
+    <script src="js/mymap.js "></script>
+    <div class="donate-us">
+      <a
+        class="donate-button"
+        href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiMTUwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCf0L7QttC10YDRgtCy0LAiLCJ0eXBlIjoiZG9uYXRlIiwibGFuZ3VhZ2UiOiJ1ayJ9&amp;signature=tTFrEUyI4WV5l3N7G%2BYg5keUaXU%3D "
+        target="_blank "
+      >
+        <p class="donate-p">Пожертвувати</p>
+      </a>
+      <p>
+        TEXTY.ORG.UA — незалежне видання без навʼязливої реклами й замовних
+        матеріалів. Щоб працювати далі, нам потрібна ваша підтримка.
+        <a href="https://texty.org.ua/support/#subscription "
+          >Також ви можете зробити пожертву щомісячною.</a
+        >
+      </p>
+    </div>
+    <section id="created_texty">
+      <div>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2022/mykolaiv_shelling/"
+          class="share-btn"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2022/mykolaiv_shelling/"
+          class="share-btn"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <h3 id="end-text">Створено Текстами</h3>
+      </div>
+      <div>
+        <a href="http://texty.org.ua/ " target="_blank "
+          ><img src="pic/logo.svg " alt="texty.org.ua " id="end-logo"
+        /></a>
+      </div>
+    </section>
+    
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-18136548-1"]);
+      _gaq.push(["_trackPageview"]);
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "stats.g.doubleclick.net/dc.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="https://texty.org.ua/static/TopProjectsBannerD.js"></script>
+    <div id="crosshair">
+     <!-- <div class="vertical"></div>
+    <div class="horizontal"></div> -->
+</div>
+
+  </body>
+</html>

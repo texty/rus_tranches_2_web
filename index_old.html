@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="fb:app_id" content="329250623807149" />
+    <meta property="og:site_name" content="ТЕКСТИ.ORG.UA" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Звідки і як Росія обстрілює Миколаїв. Ворожі позиції на супутникових знімках"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/HubashovD/project_mykolaiv_shelling_web/main/pic/socio-cover.png"
+    />
+    <meta
+      property="og:description"
+      content="Російські військові намагаються сховатися, але в них не виходить. Пильне око приватних супутників знайде будь-яку позицію окупантів."
+    />
+    <meta
+      property="og:url"
+      content="https://texty.org.ua/d/2022/mykolaiv_shelling/"
+    />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:site" content="@textyorgua" />
+    <meta property="twitter:account_id" content="49572937" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://texty.org.ua/d/2022/mykolaiv_shelling/"
+    />
+    <meta
+      name="twitter:title"
+      content="Звідки і як Росія обстрілює Миколаїв. Ворожі позиції на супутникових знімках"
+    />
+    <meta
+      name="twitter:description"
+      content="Російські військові намагаються сховатися, але в них не виходить. Пильне око приватних супутників знайде будь-яку позицію окупантів."
+    />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+
+    <!-- Other Meta Tags -->
+    <meta
+      name="title"
+      content="Звідки і як Росія обстрілює Миколаїв. Ворожі позиції на супутникових знімках"
+    />
+    <meta
+      name="description"
+      content="Російські військові намагаються сховатися, але в них не виходить. Пильне око приватних супутників знайде будь-яку позицію окупантів."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid@1.2.0"></script>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/scrollama"></script>
+
+    <script
+      src="https://kit.fontawesome.com/043a4ca43b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+
+    <title>
+      Російські укріплення під Токмаком, що долають українська воїни?
+    </title>
+  </head>
+
+  <body>
+    <div style="height: 100vh; margin-bottom: 5%">
+      <img id="cover" src="pic/cover.png" />
+      <div id="cover-wrapper"></div>
+      <div id="menu-wrapper">
+        <a href="https://texty.org.ua/"
+          ><img src="pic/white_logo.svg" id="main-logo"
+        /></a>
+        <nav class="rubrics-container">
+          <div class="rubric r1">
+            <a href="https://texty.org.ua/tag/khid-vijny/"
+              ><span><b></b>ХІД ВІЙНИ</span></a
+            >
+          </div>
+          <div class="rubric r2">
+            <a href="https://texty.org.ua/tag/dezinformatsija/"
+              ><span>#Інфовійна</span></a
+            >
+          </div>
+          <div class="rubric r3">
+            <a href="https://texty.org.ua/articles/"><span>Статті</span></a>
+          </div>
+          <div class="rubric r4">
+            <a href="https://texty.org.ua/fragments/"><span>Фрагменти</span></a>
+          </div>
+          <div class="rubric r4">
+            <a href="https://texty.org.ua/selected/"
+              ><span>ВИБІР РЕДАКЦІЇ</span></a
+            >
+          </div>
+        </nav>
+      </div>
+      <div class="header-wrapper">
+        <div id="socio-icons">
+          <!--fb-->
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2022/mykolaiv_shelling/"
+            target="_blank"
+            class="share-btn"
+          >
+            <div class="icon-wrapper">
+              <img id="fb" src="pic/facebook.png" />
+            </div>
+          </a>
+          <!--tw -->
+          <a
+            href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2022/mykolaiv_shelling/"
+            target="_blank"
+            class="share-btn"
+          >
+            <div class="icon-wrapper">
+              <img id="tw" src="pic/twitter.png" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="title-wrapper">
+        <h1>Звідки і як Росія обстрілює Миколаїв</h1>
+        <h2>Ворожі позиції на супутникових знімках</h2>
+        <p id="lead">
+          Коли ми дослідили супутникові знімки, надані компанією Planet.com, то
+          побачили, який вигляд мають російські позиції на Херсонському
+          напрямку, а також місця, з яких часто здійснюють обстріли. Але час
+          стаціонарних позицій давно минув, ворог під'їжджає, стріляє й утікає.
+          Дуже важко зупинити обстріли лише контрбатарейною боротьбою.
+        </p>
+      </div>
+    </div>
+    <div id="autors">
+      Автор:
+      <a
+        href="https://texty.org.ua/author/denys-hubashov/"
+        target="_blank"
+        class="red-d"
+        >Денис Губашов</a
+      >
+    </div>
+    <!-- <h3 class="h3-header">Звідки і як Росія обстрілює Миколаїв
+    </h3> -->
+    <div>
+      <p id="lead-mobile">
+        Коли ми дослідили супутникові знімки, надані компанією Planet.com, то
+        побачили, який вигляд мають російські позиції на Херсонському напрямку,
+        а також місця, з який часто здійснюють обстріли. Але час стаціонарних
+        позицій давно минув, ворог під'їжджає, стріляє й утікає. Дуже важко
+        зупинити обстріли лише контрбатарейною боротьбою.
+      </p>
+      <!-- <p class='simple-text'>Відстань від Херсона до Миколаєва — близько 50 км. Лінія фронту проходить десь посередині між містами. У середньому за 30 км, але російські позиції біля Солдатського та Правдиного, які вони великими зусиллями утримують вже дуже довгий час, — це
+            близько 20-25 км від околиць Миколаєва. На таку відстань можуть лупити більшість радянських артилерійських систем, якими користуються росіяни, наприклад, МСТА, Гіацинт, Піон Малка. </p>
+        <p class='simple-text'>Більше про російські артилерійські системи читайте у нашому матеріалі <a href="https://texty.org.ua/projects/107013/vohnyanyj-val-yak-i-yaki-snaryady-prylitayut-na-ukrayinski-pozyciyi" target="_blank" class="red-d">“Вогняний вал. Як і які снаряди прилітають на українські позиції“ </a>
+        </p>
+        <p class='simple-text'>За основу ми взяли лінію фронту від аналітичного центру
+            <a href="https://militaryland.net/maps/deployment-map/" target="_blank" class="red-d"> Militaryland</a> за липень 2022 року — коли вона не надто змінювалася, а детальнішої інформації не було. Було здійснено локальні контратаки, але значних
+            зміщень не було.
+        </p> -->
+    </div>
+    <div id="scrolly">
+      <h3 class="h3-header">Оборона та позиції росіян під Херсоном</h3>
+      <div>Тут може бути текст</div>
+      <section style="margin-top: 10vh">
+        <div id="mapBlocks">
+          <div id="map"></div>
+        </div>
+        <div id="textBlocks">
+          <!-- вставляти текст з  цього місця -->
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>0</h5>
+            <p>nan</p>
+          </div>
+          <div
+            class="step"
+            datazoom="9.0"
+            datacoords=" 47.1, 35.5"
+            datapoly="nan"
+            datapoints="1,2"
+            datalines="nan"
+          >
+            <h5>1</h5>
+            <p>
+              Стратегічною ціллю на півдні України для Української армії є
+              розрив комунікації між окупованим сходом україни та окупованим
+              кримом- вихід до узбережжя Азовського моря. Одним із способів це
+              зробити є звільнення Мелітополя.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="10.0"
+            datacoords="47.3840105246237, 35.81596210598946 "
+            datapoly="nan"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>2</h5>
+            <p>
+              Українські воїни продовжують активні наступнальні дії на
+              Токмацькому напрямку. Лінія бойового зіткнення вже посунулусь на
+              південь - до другої лінії російської оборони.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_2,line_1,line_0"
+          >
+            <h5>3</h5>
+            <p>
+              Російські укріплення на цьому напрямку - дуже потужні. Вони
+              складаються із трьох основних ліній оборони.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_0"
+          >
+            <h5>4</h5>
+            <p>
+              Перша лінія оборони - окремі укріплення взводного або ротного
+              рівня, так звані ВОПи та РОПи. Це умовно автономні укріплення, які
+              складаються із окопів та бліндажів. Весь можливий простір між цими
+              укріпленнями - мінні поля. Тільки окремі дороги зʼєднують опорні
+              пункти із другою лінією оборони із якої відбувається постачання.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_1"
+          >
+            <h5>5</h5>
+            <p>
+              Друга лінія оборони - основна, складні інженерні укріплення та
+              конструкції, бетонні ДОТИ. Лінія складається із окопу протядністю
+              десятки кілометрів. Через певну відставнь на цій лінії також
+              розміщуються ВОПи, РОПи, але також трапляються великі укріплення
+              батальйонного рівня - розраховані на утримання 500 - 600 людьми.
+              Такі укріплення вже мають власні штаби та склади, які переважно
+              розсташовуються у найближчих населених пунктах.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_2"
+          >
+            <h5>6</h5>
+            <p>
+              Третя лінія оборони - лінія забезпечення. Вона також має
+              укріплення, проте саме на ній розташовані найбільші склади (серед
+              тих, які знаходяться близько до лінії бойового зіткнення), також
+              на ній розсташовуються підрозділи підтримки: великі ремонтні
+              майстерні, підрозділи розвідки, РЕБ, РЕР, штаби артилерійських
+              підрозділів.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="tokmak,ocheret"
+          >
+            <h5>7</h5>
+            <p>
+              Також на треій лінії оборони розміщенні укріплення навколо великих
+              населених пунктів: Токмаку та Очеретуватого
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="12.0"
+            datacoords="47.43106825165043, 35.82571700998035"
+            datapoly="nan"
+            datapoints="3"
+            datalines="nan"
+          >
+            <h5>8</h5>
+            <p>
+              Кожна лінія укріплень складається із окремих інженерних споруд та
+              конструкцій. Розглянемо укріплення першої лінії оборони. Цей
+              опорний пункт знаходиться між звільненим Роботіним (його звільнили
+              на початку вересня 2023 року) та Новопрокопівкою. Можливо саме тут
+              зараз збройні сисли України ведуть наступальну операцію.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="17.0"
+            datacoords="47.43106825165043, 35.82571700998035"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="field_1_line"
+          >
+            <h5>9</h5>
+            <p>
+              Це опорний пункт першої лінії - тобто безпосередньо на лінії
+              бойового зіткнення. Якщо оцінювати за розмірами, це може бути
+              пункт ротного рівня. Тобто розрахований на оборону - до 200
+              чоловік. Він має розгалуджену систему траншей та бліндажів,
+              секрети. Скоріше за все оточений мінними полями. Знімок зроблено в
+              червні 2023 року - із того часу укріплення могли тільки
+              збільшитись.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="16.0"
+            datacoords="47.43106825165043, 35.82571700998035"
+            datapoly="roof_1"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>10</h5>
+            <p>
+              Як ми бачимо - частина траншей (окопів) має перекриття. З західної
+              сторони скоріше за все перкрито близько 200 метрів траншеї.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="16.0"
+            datacoords="nan"
+            datapoly="1"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>11</h5>
+            <p>
+              В цьому укріпленні також є капонір, який може використовуватись
+              для сховку техніки або боєкомплекту чи МТС.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="12.0"
+            datacoords="47.43106825165043, 35.82571700998035"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_4"
+          >
+            <h5>12</h5>
+            <p>
+              До цього укріплення веде основна дорога Роботине - Новопрокопівка.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="15.0"
+            datacoords="47.43106825165043, 35.82571700998035"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_3"
+          >
+            <h5>13</h5>
+            <p>
+              Та польові дороги і в середині укріплення, і до інших вузлів
+              оборони.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="13.0"
+            datacoords="nan"
+            datapoly="poly_2"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>14</h5>
+            <p>
+              Скоріше за все поля навколо цього укріплення - заміновані, на них
+              майже відсутні сліди від військової техніки.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="16.0"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="4"
+            datalines="nan"
+          >
+            <h5>15</h5>
+            <p>
+              В цьому укріпленні є і "виносні" спостереджні пункти, на відстані
+              від основного окопу - близько 70 - 90 метрів.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="14.0"
+            datacoords="47.42880271264113, 35.88694901844926"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_5"
+          >
+            <h5>16</h5>
+            <p>
+              Таких укріплень по всій лінії фронту у росії дуже багато. Ми
+              дослідили тільки невелинку ділянку, на Токмакському напрямі на
+              якій зараз проходить український наступ.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="14.0"
+            datacoords="47.42880271264113, 35.88694901844926"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_6, line_7"
+          >
+            <h5>17</h5>
+            <p>
+              Друга та третя лінія оборони складаються з ще більш складних
+              інженерних споруд.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="line_8"
+          >
+            <h5>18</h5>
+            <p>
+              На цій длянці є також особливість - між другою та трьою лінією
+              оборони - є ще одна - проміжна система укріплень.
+            </p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>19</h5>
+            <p>Кожна із ліній складається мінімум із протитанкового рову</p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>20</h5>
+            <p>пірамідок суровікіна (зубів дракона)</p>
+          </div>
+          <div
+            class="step"
+            datazoom="nan"
+            datacoords="nan"
+            datapoly="nan"
+            datapoints="nan"
+            datalines="nan"
+          >
+            <h5>21</h5>
+            <p>та безпосередніх військових укріплень</p>
+          </div>
+          <!-- вставляти текст до цього місця -->
+        </div>
+        <div id="scroll-final"></div>
+      </section>
+      <div>
+        <div id="final-block" style="margin-top: 10%">
+          <p class="simple-text">
+            Від супутникової розвідки сховатися майже неможливо — і виводить
+            війну на новий якісний рівень. А перемога залежить від технологічної
+            переваги та вміння цією перевагою користуватися.
+          </p>
+          <p class="simple-text">
+            Перемога в нашій війні буде за тим, хто завдає швидших і точніших
+            ударів. І ми поки що в цій вогняній дуелі маємо непогані результати
+            попри меншу кількість озброєння.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="donate-us">
+      <a
+        class="donate-button"
+        href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJwdWJsaWNfa2V5IjoiaTc2NjUwNTYyODI3IiwiYW1vdW50IjoiMTUwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCf0L7QttC10YDRgtCy0LAiLCJ0eXBlIjoiZG9uYXRlIiwibGFuZ3VhZ2UiOiJ1ayJ9&amp;signature=tTFrEUyI4WV5l3N7G%2BYg5keUaXU%3D "
+        target="_blank "
+      >
+        <p class="donate-p">Пожертвувати</p>
+      </a>
+      <p>
+        TEXTY.ORG.UA — незалежне видання без навʼязливої реклами й замовних
+        матеріалів. Щоб працювати далі, нам потрібна ваша підтримка.
+        <a href="https://texty.org.ua/support/#subscription "
+          >Також ви можете зробити пожертву щомісячною.</a
+        >
+      </p>
+    </div>
+    <section id="created_texty">
+      <div>
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://texty.org.ua/d/2022/mykolaiv_shelling/"
+          class="share-btn"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://twitter.com/intent/tweet?text=https://texty.org.ua/d/2022/mykolaiv_shelling/"
+          class="share-btn"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <h3 id="end-text">Створено Текстами</h3>
+      </div>
+      <div>
+        <a href="http://texty.org.ua/ " target="_blank "
+          ><img src="pic/logo.svg " alt="texty.org.ua " id="end-logo"
+        /></a>
+      </div>
+    </section>
+    <script src="js/map.js "></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-18136548-1"]);
+      _gaq.push(["_trackPageview"]);
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          "stats.g.doubleclick.net/dc.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="https://texty.org.ua/static/TopProjectsBannerD.js"></script>
+  </body>
+</html>

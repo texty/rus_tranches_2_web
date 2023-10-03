@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "tiles_boder_2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 35.345327672055141, 47.75546481935227 ], [ 36.605140026334688, 47.743861237295647 ], [ 36.613768878076321, 46.919282703057426 ], [ 35.060575564580994, 46.942852506164421 ], [ 35.345327672055141, 47.75546481935227 ] ] ] } }
+]
+}
