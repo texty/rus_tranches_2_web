@@ -1083,17 +1083,17 @@ body {
   margin-left: 25%;
   font-family: "proxima-semi";
   font-size: 24px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 3vh;
   color: #d9d9d9;
 }
 
-/* a:link {
-  color: rgb(0, 39, 79);
-} */
-
-/* .red-d {
-  color: rgb(0, 39, 79);
-} */
+#autors > p {
+  margin: 10px;
+}
 
 .simple-text {
   width: 50%;
@@ -1424,4 +1424,7 @@ body {
   width: 100%;
   position: absolute;
   transform: translate;
+}
+
+#espreso-logo {
 }
