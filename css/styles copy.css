@@ -31,7 +31,7 @@ header {
   font-family: "proxima-regular";
   min-height: 2em;
   width: 100%;
-  background-color: #071e3e;
+  background-color: white;
   display: flex;
   display: grid;
   grid-template-columns: [start] 2fr [logo-start] 15fr [rubrics-start] 55fr [rubrics-end] 2fr [end];
@@ -113,7 +113,7 @@ header .rubrics-container .r-burger {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #d9d9d9;
+  background-color: #616161;
   transition-duration: 0.25s;
 }
 
@@ -133,7 +133,7 @@ header .rubrics-container .r-burger {
   height: 50px;
   margin: 0;
   padding: 0;
-  background-color: #071e3e;
+  background-color: white;
   transition-duration: 0.25s;
   z-index: 10000;
 }
@@ -181,7 +181,7 @@ header .rubrics-container .r-burger {
     position: fixed;
     top: 0;
     height: 50px;
-    background-color: #071e3e;
+    background-color: black;
     grid-template-columns: auto 80px;
   }
 
@@ -1033,6 +1033,7 @@ body {
   margin: auto;
 }
 
+
 #title-wrapper {
   position: absolute;
   margin: auto;
@@ -1083,8 +1084,6 @@ body {
   margin-left: 25%;
   font-family: "proxima-semi";
   font-size: 24px;
-  margin-bottom: 3vh;
-  color: #d9d9d9;
 }
 
 /* a:link {
