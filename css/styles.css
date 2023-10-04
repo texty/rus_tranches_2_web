@@ -1,26 +1,25 @@
 @font-face {
-  font-family: "CHARTERC";
-  src: url("../fonts/CHARTERC.OTF") format("opentype");
-}
-
-@font-face {
-  font-family: "CHARTERC-bold";
-  src: url("../fonts/CHARTERC-BOLD.OTF") format("opentype");
+  font-family: "proxima-regular";
+  src: url("../fonts/proxima-nova-regular.woff") format("opentype");
 }
 
 @font-face {
   font-family: "proxima-medium";
-  src: url("../fonts/PROXIMA-NOVA-A-MEDIUM.OTF") format("opentype");
+  src: url("../fonts/proxima-nova-medium.woff") format("opentype");
+}
+@font-face {
+  font-family: "proxima-semi";
+  src: url("../fonts/proxima-nova-semibold.woff") format("opentype");
 }
 
 @font-face {
   font-family: "proxima-bold";
-  src: url("../fonts/PROXIMA-NOVA-A-BOLD.OTF") format("opentype");
+  src: url("../fonts/proxima-nova-bold.woff") format("opentype");
 }
 
 @font-face {
-  font-family: "proxima-semi";
-  src: url("../fonts/PROXIMA-NOVA-A-SEMIBOLD.OTF") format("opentype");
+  font-family: "proxima-black";
+  src: url("../fonts/proxima-nova-black.woff") format("opentype");
 }
 
 @media (max-width: 479px) {
@@ -382,7 +381,7 @@
   grid-column: 2;
   margin-top: 1%;
   position: relative;
-  font-family: "ProximaNova", sans-serif;
+  font-family: "proxima-medium";
   font-size: 20px;
   align-items: center;
   display: flex;
@@ -473,7 +472,7 @@ a:link {
 
 .h3-header {
   font-size: 50px;
-  font-family: "CHARTERC-bold";
+  font-family: "proxima-bold";
   margin-left: 25%;
 }
 
@@ -559,7 +558,7 @@ a:link {
   margin: auto;
   font-size: calc(14px + 0.5vw);
   line-height: 1.5;
-  font-family: proxima-medium, sans-serif;
+  font-family: "proxima-medium";
 }
 
 .blackP p {
