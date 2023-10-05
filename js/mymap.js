@@ -375,40 +375,17 @@ window.onload = function () {
     })
 
     .onStepExit((response) => {
-      let polygons = response.element.attributes.datapoly
-        ? response.element.attributes.datapoly.value
-            .split(",")
-            .map((item) => item.trim())
-        : [];
-
-      let lines = response.element.attributes.datalines
-        ? response.element.attributes.datalines.value
-            .split(",")
-            .map((item) => item.trim())
-        : [];
-
-      let points = response.element.attributes.datapoints
-        ? response.element.attributes.datapoints.value
-            .split(",")
-            .map((item) => item.trim())
-        : [];
-
-      let labels = response.element.attributes.datalabels
-        ? response.element.attributes.datalabels.value
-            .split(",")
-            .map((item) => item.trim())
-        : [];
 
       if (response.index === totalSteps - 1 && response.direction === "down") {
         map.setFilter("lines-layer", null);
         map.setMaxZoom(16);
         map.setMinZoom(10);
 
-        map.flyTo({
-          center: [35.77905405936755, 47.35262861597809],
-          zoom: 10,
-          duration: 2000,
-        });
+        // map.flyTo({
+        //   center: [35.77905405936755, 47.35262861597809],
+        //   zoom: 10,
+        //   duration: 2000,
+        // });
       }
     });
 };

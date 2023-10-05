@@ -661,6 +661,7 @@ footer a {
     width: 100% !important;
     height: 50vh !important;
     z-index: 2 !important;
+    top: 50px !important;
   }
   #map {
     height: 50vh !important;
