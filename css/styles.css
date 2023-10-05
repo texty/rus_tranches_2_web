@@ -173,14 +173,6 @@ header .rubrics-container .r-burger {
 }
 
 @media (max-width: 800px) {
-  header .rubrics-container .r5,
-  header .rubrics-container .r6,
-  header .rubrics-container .r7 {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
   header {
     position: fixed;
     top: 0;
@@ -206,6 +198,11 @@ header .rubrics-container .r-burger {
   header .rubrics-container .r2,
   header .rubrics-container .r3,
   header .rubrics-container .r4 {
+    display: none;
+  }
+  header .rubrics-container .r5,
+  header .rubrics-container .r6,
+  header .rubrics-container .r7 {
     display: none;
   }
 
@@ -711,13 +708,14 @@ footer a {
     align-items: center !important;
     margin-left: 5vw !important;
   }
-  .rubrics-container {
+  /* .rubrics-container {
     display: none !important;
-  }
+  } */
   #menu-wrapper {
     display: block !important;
   }
 }
+
 @media (max-width: 800px) {
   #socio-icons {
     margin-top: 50px;
@@ -725,19 +723,12 @@ footer a {
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  .rubrics-container {
-    display: none !important;
-  }
   #menu-wrapper {
     display: block !important;
   }
   #main-logo {
     width: 20% !important;
   }
-
-  /* #tw {
-    width: 3vw !important;
-  } */
   #cover {
     height: 100% !important;
   }
@@ -767,12 +758,12 @@ footer a {
     width: 70% !important;
     font-size: 20px !important;
   }
-  .h3-header {
+  /* .h3-header {
     margin: auto !important;
     text-align: center;
     margin-top: 10% !important;
     font-size: 40px !important;
-  }
+  } */
   #staticMapsBlock {
     display: block !important;
   }
