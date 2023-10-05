@@ -6,7 +6,7 @@ const MAP_SETTINGS = {
   style: "./data/osm_liberty.json",
   center: [35.5, 47.1],
   zoom: 9,
-  minZoom: 8,
+  minZoom: 6,
   maxZoom: 16,
   pitch: 0,
   bearing: 0,
@@ -357,12 +357,15 @@ window.onload = function () {
       map.setFilter("polygons-layer", createFilter(polygons));
       map.setFilter("labels", createFilter(labels));
 
-      setTimeout(0.5);
+      // setTimeout(0.5);
 
       map.flyTo({
+        essential: true,
         center: [coords[1], coords[0]],
         zoom: zoom,
         duration: 2000,
+        speed: 0.2,
+        curve: 1,
       });
 
       if (response.index === totalSteps - 1 && response.direction === "up") {
@@ -375,17 +378,10 @@ window.onload = function () {
     })
 
     .onStepExit((response) => {
-
       if (response.index === totalSteps - 1 && response.direction === "down") {
         map.setFilter("lines-layer", null);
         map.setMaxZoom(16);
         map.setMinZoom(10);
-
-        // map.flyTo({
-        //   center: [35.77905405936755, 47.35262861597809],
-        //   zoom: 10,
-        //   duration: 2000,
-        // });
       }
     });
 };
