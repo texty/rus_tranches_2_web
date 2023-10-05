@@ -101,6 +101,7 @@ header .rubrics-container .r-burger {
   content: "";
   top: -8px;
 }
+
 .menu__btn > span::after {
   content: "";
   top: 8px;
@@ -115,6 +116,9 @@ header .rubrics-container .r-burger {
   height: 2px;
   background-color: #d9d9d9;
   transition-duration: 0.25s;
+}
+.menu__btn > span {
+  position: absolute;
 }
 
 .mobile-only {
@@ -168,7 +172,7 @@ header .rubrics-container .r-burger {
   margin-top: 80px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 800px) {
   header .rubrics-container .r5,
   header .rubrics-container .r6,
   header .rubrics-container .r7 {
@@ -176,7 +180,7 @@ header .rubrics-container .r-burger {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 800px) {
   header {
     position: fixed;
     top: 0;
@@ -211,12 +215,6 @@ header .rubrics-container .r-burger {
 
   .mobile-only {
     display: block;
-  }
-
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    background-color: white;
   }
 
   .items__container {
@@ -450,6 +448,7 @@ footer {
 
 #logo-copyright {
   grid-column: logo-start/logo-end;
+  color: #d9d9d9;
 }
 
 #guide-block {
@@ -474,6 +473,7 @@ footer {
 #license {
   grid-column: logo-start/guide-start;
   margin-top: 1em;
+  color: #d9d9d9;
 }
 
 #license p {
@@ -543,78 +543,12 @@ footer a {
   color: black;
 }
 
-.fa-facebook {
-  letter-spacing: 1px;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Brands";
-  box-sizing: content-box;
-  margin: 0.5em;
-  cursor: pointer;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  border-radius: 50%;
-  padding: 0.5em;
-  font-size: 2em;
-  line-height: 1;
-  transition: all 0.5s;
-  stroke: rgb(255, 255, 255);
-}
-
-.fa-twitter {
-  letter-spacing: 1px;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  font-family: "Font Awesome 5 Brands";
-  box-sizing: content-box;
-  margin: 0.5em;
-  cursor: pointer;
-  width: 1em;
-  height: 1em;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  border-radius: 50%;
-  padding: 0.5em;
-  font-size: 2em;
-  line-height: 1;
-  transition: all 0.5s;
-}
-
-#socio-icons {
-  margin-left: 3vw;
-  font-family: "Roboto Mono", monospace;
-  display: flex;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  position: absolute;
-}
-
 .icon-wrapper {
   font-family: "Roboto Mono", monospace;
   display: flex;
   -webkit-box-pack: start;
   justify-content: flex-start;
 }
-
-#tw {
-  font-family: "Roboto Mono", monospace;
-  margin-left: 0.5vw;
-}
-
-#fb {
-  font-family: "Roboto Mono", monospace;
-}
-
 .container {
   position: relative;
   width: 100%;
@@ -654,7 +588,7 @@ footer a {
   src: url("../fonts/proxima-nova-black.woff") format("opentype");
 }
 
-@media (max-width: 479px) {
+@media (max-width: 800px) {
   #main-logo {
     width: 50% !important;
   }
@@ -666,6 +600,7 @@ footer a {
   }
   #cover {
     height: 100% !important;
+    top: 50px;
   }
   #title-wrapper {
     margin-left: 0 !important;
@@ -768,6 +703,11 @@ footer a {
     display: block !important;
   }
 }
+@media (max-width: 800px) {
+  #socio-icons {
+    margin-top: 50px;
+  }
+}
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .rubrics-container {
@@ -779,12 +719,10 @@ footer a {
   #main-logo {
     width: 20% !important;
   }
-  #fb {
+
+  /* #tw {
     width: 3vw !important;
-  }
-  #tw {
-    width: 3vw !important;
-  }
+  } */
   #cover {
     height: 100% !important;
   }
@@ -984,10 +922,12 @@ body {
 #tw {
   font-family: "Roboto Mono", monospace;
   margin-left: 0.5vw;
+  width: 3vw;
 }
 
 #fb {
   font-family: "Roboto Mono", monospace;
+  width: 3vw;
 }
 
 #cover {
@@ -1088,6 +1028,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 3vh;
+  margin-top: 10vh;
   color: #d9d9d9;
 }
 
@@ -1254,7 +1195,6 @@ body {
 }
 
 #frontLineMarker:before {
-  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -1427,4 +1367,26 @@ body {
 }
 
 #espreso-logo {
+  margin-left: 1vw;
+  height: 2vh;
+}
+
+#espreso-wrapper {
+  background-color: #000000;
+  width: 100vw;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+#espreso-wrapper p {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "proxima-medium";
+  font-size: calc(14px + 0.5vw);
+  line-height: 1.5;
+  color: #d9d9d9;
 }
