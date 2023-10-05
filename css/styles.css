@@ -315,7 +315,7 @@ header .rubrics-container .r-burger {
   color: inherit;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 800px) {
   .subscribe-footer {
     background-color: unset;
     color: unset;
@@ -377,7 +377,7 @@ header .rubrics-container .r-burger {
   box-sizing: border-box;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 800px) {
   .subscribe-footer .mail-input-container {
     width: 100%;
     border: 1px solid grey;
@@ -498,7 +498,7 @@ footer a {
   /* font-size: calc(14px + 0.5vw); */
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 800px) {
   footer {
     background-color: black;
     color: #d9d9d9;
@@ -613,37 +613,15 @@ footer a {
     height: 100% !important;
     top: 50px;
   }
+
   #title-wrapper {
     margin-left: 0 !important;
-    margin-top: 30% !important;
   }
-  #title-wrapper h1 {
-    width: 80% !important;
-    margin: auto !important;
-    font-size: 40px !important;
-  }
-  #title-wrapper h2 {
-    width: 80% !important;
-    margin: auto !important;
-    margin-top: 10% !important;
-    font-size: 30px !important;
-  }
-  #lead {
-    display: none;
-  }
+
   .blackP {
     width: 80vw !important;
   }
-  #lead-mobile {
-    display: block !important;
-    font-size: 20px !important;
-    font-family: "proxima-semi";
-    margin: auto;
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    line-height: 1.5;
-  }
+
   .simple-text {
     width: 70% !important;
     font-size: 20px !important;
@@ -720,9 +698,7 @@ footer a {
   #socio-icons {
     margin-top: 50px;
   }
-}
 
-@media (min-width: 481px) and (max-width: 1023px) {
   #menu-wrapper {
     display: block !important;
   }
@@ -735,35 +711,11 @@ footer a {
   #title-wrapper {
     margin-left: 0 !important;
   }
-  #title-wrapper h1 {
-    width: 80% !important;
-    margin: auto !important;
-    font-size: 50px !important;
-  }
-  #title-wrapper h2 {
-    width: 80% !important;
-    margin: auto !important;
-    margin-top: 10% !important;
-    font-size: 40px !important;
-  }
-  #lead {
-    width: 80% !important;
-    margin-top: 25% !important;
-    font-size: 24px !important;
-  }
-  #lead-mobile {
-    display: none;
-  }
+
   .simple-text {
     width: 70% !important;
     font-size: 20px !important;
   }
-  /* .h3-header {
-    margin: auto !important;
-    text-align: center;
-    margin-top: 10% !important;
-    font-size: 40px !important;
-  } */
   #staticMapsBlock {
     display: block !important;
   }
@@ -816,20 +768,6 @@ footer a {
   .donate-us {
     align-items: center !important;
     width: 80% !important;
-  }
-}
-
-@media (max-width: 1023px) {
-  .scroll-button {
-    height: 8vh !important;
-    width: 8vh !important;
-  }
-  #scrollDownButton {
-    left: 5% !important;
-  }
-
-  #scrollUpButton {
-    left: calc(85% - 8vw) !important;
   }
 }
 
@@ -989,7 +927,6 @@ body {
 #title-wrapper h1 {
   color: white;
   font-family: "proxima-bold";
-  font-size: 70px;
   margin: auto;
   text-align: center;
   margin-top: 10%;
@@ -999,7 +936,6 @@ body {
 #title-wrapper h2 {
   color: white;
   font-family: "proxima-semi";
-  font-size: 30px;
   width: 80%;
   margin: auto;
   text-align: center;
@@ -1007,22 +943,9 @@ body {
   background-color: rgba(0, 39, 79, 0.5);
 }
 
-#lead {
-  width: 60%;
-  font-size: 24px;
-  font-family: "proxima-bold";
-  margin: auto;
-  text-align: justify;
-  color: white;
-}
-
 #leadone {
   font-family: "proxima-semi";
   font-size: 24px;
-}
-
-#lead-mobile {
-  display: none;
 }
 
 #autors {
@@ -1229,43 +1152,9 @@ body {
   height: 50px;
 }
 
-.tranches_routes,
-.tank_lines,
-.pyramids,
-.tranches {
-  stroke: yellow;
-  opacity: 0;
-  stroke-width: 1;
-}
-
 #positionLineText {
   grid-column: 2;
   grid-row: 1;
-}
-
-.shellingTriangle {
-  opacity: 0;
-  stroke-opacity: 1;
-  stroke-width: 2;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-  fill: #000000;
-  fill-opacity: 0;
-}
-
-.shelling-points {
-  opacity: 0;
-  fill-opacity: 0;
-}
-
-.shelling-triangle-2 {
-  opacity: 0;
-  stroke-opacity: 1;
-  stroke-width: 2;
-  stroke-linecap: square;
-  stroke-linejoin: miter;
-  fill: #000000;
-  fill-opacity: 0;
 }
 
 .donate-us {
@@ -1395,4 +1284,12 @@ body {
   font-size: calc(14px + 0.5vw);
   line-height: 1.5;
   color: #d9d9d9;
+}
+
+#title-wrapper h1 {
+  font-size: calc(40px + 0.5vw);
+}
+
+#title-wrapper h2 {
+  font-size: calc(30px + 0.5vw);
 }
