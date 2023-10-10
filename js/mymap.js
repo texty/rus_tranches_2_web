@@ -204,7 +204,7 @@ function setupLayers() {
       "icon-size": ["interpolate", ["linear"], ["zoom"], 10, 0.05, 22, 0.05],
 
       "text-field": ["get", "name"],
-      "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+      // "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
       "text-size": ["interpolate", ["linear"], ["zoom"], 10, 12, 22, 12],
       "text-allow-overlap": true,
       "text-ignore-placement": true,
