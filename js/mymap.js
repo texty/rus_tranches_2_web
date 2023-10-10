@@ -1,6 +1,7 @@
-mapboxgl.accessToken = "pIRyhi5Ww2gupphkfRwc";
-// "vXHfK9IIJZ2VRIjeYQi6";
-// "pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNsZGQyY2w5dDBjb2gzcG8xeXQ3c2EzczEifQ.lYkv8Hg7kFKNdNJF7wx4mg";
+mapboxgl.accessToken =
+  // "pIRyhi5Ww2gupphkfRwc";
+  // "vXHfK9IIJZ2VRIjeYQi6";
+  "pk.eyJ1IjoiZXZnZXNoYWRyb3pkb3ZhIiwiYSI6ImNsZGQyY2w5dDBjb2gzcG8xeXQ3c2EzczEifQ.lYkv8Hg7kFKNdNJF7wx4mg";
 
 const MAP_SETTINGS = {
   container: "map",
