@@ -1299,7 +1299,7 @@ body {
   margin-left: 1vw;
 }
 
-#planet {
+.planet {
   font-weight: 400;
   font-family: "proxima-bold";
   margin-bottom: 3vh;
